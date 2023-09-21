@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.4.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <!--<script defer src="/__/firebase/10.4.0/firebase-auth-compat.js"></script> -->
+    <script defer src="/__/firebase/10.4.0/firebase-database-compat.js"></script>
+    <!-- <script defer src="/__/firebase/10.4.0/firebase-firestore-compat.js"></script> -->
+    <script defer src="/__/firebase/10.4.0/firebase-functions-compat.js"></script>
+    <!-- <script defer src="/__/firebase/10.4.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-storage-compat.js"></script> -->
+    <script defer src="/__/firebase/10.4.0/firebase-analytics-compat.js"></script>
+    <!--<script defer src="/__/firebase/10.4.0/firebase-remote-config-compat.js"></script> -->
+    <script defer src="/__/firebase/10.4.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+  <body>
+    <h2>Upload Content</h2>
+      <label for="title"><b>Program Name:</b></label><br>
+      <input type="text" id="title" name="title" placeholder="Enter the name of the program" required style="width: 400px;"><br><br>
+      <label for="pgmnum"><b>Program Index number:</b><br>Please select which program do you want to upload</label><br>
+      <select id="pgmnum" name="pgmnum" placeholder="slecet the programn number">
+              <option value="">Please select</option>
+              <option value="1">Part-A 2</option>
+              <option value="2">Part-A 3</option>
+              <option value="3">Part-A 4</option>
+              <option value="4">Part-A 5a</option>
+              <option value="5">Part-A 5b</option>
+              <option value="6">Part-A 6</option>
+              <option value="7">Part-A 7a</option>
+              <option value="8">Part-A 7b</option>
+              <option value="9">Part-A 8</option>
+              <option value="10">Part-A 9</option>
+              <option value="11">Part-A 10</option>
+              <option value="12">Part-B 1</option>
+              <option value="13">Part-B 2</option>
+              <option value="14">Part-B 5a</option>
+              <option value="15">Part-B 5b</option>
+      </select>
+      <br>   
+      <label for="content"><b>Code to Upload:</b></label><br>
+      <textarea id="content" name="content" rows="25" cols="200" placeholder="Paste the Program here and press upload" required></textarea><br>
+
+      <input type="submit" value="Upload" id="uploadButton" name="uploadButton">
+
+
+    <script src="uprocess.js" type="module"></script>
+   
+  </body>
+</html>
